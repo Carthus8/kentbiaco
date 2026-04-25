@@ -39,14 +39,14 @@ footer {
   opacity: 0.7; /* Makes it look secondary to the main content */
 }
 
-.footer-links a {
+.author-links a {
   color: #04AA6D;
   text-decoration: none;
   margin: 0 10px;
   transition: 0.3s;
 }
 
-.footer-links a:hover {
+.author-links a:hover {
   text-decoration: underline;
 }
 .about-section {
