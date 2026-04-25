@@ -148,3 +148,14 @@ input:checked + .slider:after {
   border-bottom: 3px solid #04AA6D;
   padding-bottom: 11px;
 }
+
+.nav-left {
+  display: flex;
+}
+
+.nav-right {
+  margin-left: auto; /* pushes switch to the right */
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
