@@ -136,6 +136,8 @@ input:checked + .slider:after {
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #04AA6D;
-  color: white;
+  background-color: transparent;
+  color: #04AA6D;
+  border-bottom: 3px solid #04AA6D;
+  padding-bottom: 11px;
 }
