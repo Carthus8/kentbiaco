@@ -18,6 +18,21 @@ header {
 section {
   margin: 50px;
 }
+
+.about-section {
+  display: flex;
+  justify-content: center; /* Centers the container horizontally */
+  align-items: center;     /* Centers the container vertically (if needed) */
+  min-height: 50vh;        /* Adjust based on your layout */
+  width: 100%;
+}
+
+.about-container {
+  width: 90%;              /* Responsive width for mobile */
+  max-width: 600px;        /* Limits how wide the text spreads on desktop */
+  text-align: left;        /* This aligns the text to the left within the center */
+}
+
 :root {
   --bg-color: #ffffff;
   --text-color: #000000;
