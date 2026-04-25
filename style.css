@@ -5,11 +5,12 @@ body {
 }
 
 header {
-  background: var(--bg-color);
-  padding: 15px 20px;
+  background: transparent;
+  padding: 0;
   position: relative;
+  justify-content: center;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 10px;
 }
 
@@ -119,7 +120,7 @@ input:checked + .slider:after {
   display: flex;
   flex-wrap: wrap;
   flex: 1;
-  margin: 15px 20px;
+  margin: 15px 0;
 }
 
 /* Style the links inside the navigation bar */
