@@ -16,7 +16,7 @@ header {
 
 .about-section {
   display: flex;
-  justify-content: left; /* Centers the container horizontally */
+  justify-content: center; /* Centers the container horizontally */
   align-items: center;     /* Centers the container vertically (if needed) */
   min-height: 50vh;        /* Adjust based on your layout */
   width: 100%;
