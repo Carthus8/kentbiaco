@@ -13,18 +13,20 @@ header {
 section {
   margin: 20px;
 }
-
 :root {
   --bg-color: #ffffff;
   --text-color: #000000;
 }
-body.dark-mode {
+
+body.dark-theme {
   --bg-color: #121212;
   --text-color: #ffffff;
 }
+
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+  transition: 0.3s; 
 }
 
 .switch {
