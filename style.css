@@ -5,8 +5,8 @@ body {
 }
 
 header {
-  background: transparent;
-  padding: 0;
+  background: var(--bg-color);
+  padding: 15px 20px;
   position: relative;
   display: flex;
   align-items: flex-start;
