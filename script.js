@@ -1,7 +1,3 @@
-function sayHello() {
-  alert("Hello! Welcome to my website 🎉");
-}
-
 function toggleDarkMode() {
   const isChecked = document.getElementById('dark-mode-toggle').checked;
   
