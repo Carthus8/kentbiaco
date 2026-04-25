@@ -35,9 +35,10 @@ body {
 
 .switch {
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   width: 60px;
-  height: 34px;
+  height: 100%;
 }
 
 .switch input {
@@ -47,11 +48,8 @@ body {
 }
 
 .slider {
-  position: absolute;
+  position: relative;
   cursor: pointer;
-  top: 0;
-  right: 0;
-  bottom: 0;
   width: 60px;
   background-color: #ccc;
   -webkit-transition: .4s;
@@ -160,7 +158,6 @@ input:checked + .slider:after {
 }
 
 .nav-right {
-  margin-left: auto; /* pushes toggle to right */
   display: flex;
   align-items: center;
 }
