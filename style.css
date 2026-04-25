@@ -38,7 +38,7 @@ body {
   display: flex;
   align-items: center;
   width: 60px;
-  height: 100%;
+  height: 34px;
 }
 
 .switch input {
@@ -115,6 +115,7 @@ input:checked + .slider:after {
   display: flex;
   align-items: center;
   height: 50px;
+  justify-content: space-between;
 
   width: 90%;              /* controls pill width */
   max-width: 1000px;      /* prevents it from getting too wide */
