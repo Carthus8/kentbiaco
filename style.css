@@ -114,6 +114,7 @@ input:checked + .slider:after {
 .topnav {
   display: flex;
   align-items: center;
+  height: 50px;
 
   width: 90%;              /* controls pill width */
   max-width: 1000px;      /* prevents it from getting too wide */
@@ -135,6 +136,8 @@ input:checked + .slider:after {
   padding: 10px 12px;
   text-decoration: none;
   font-size: 17px;
+  display: flex;
+  align-items: center;
   flex: 0 1 auto;
 }
 
