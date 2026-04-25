@@ -65,7 +65,6 @@ body {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -77,7 +76,6 @@ body {
   width: 26px;
   right: 4px;
   bottom: 4px;
-  background-color: #191970;
   -webkit-transition: .4s;
   transition: .4s;
 }
