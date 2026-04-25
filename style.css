@@ -124,6 +124,10 @@ footer {
   --text-color: #000000;
 }
 
+html {
+  background-color: var(--bg-color);
+}
+
 .dark-theme {
   --bg-color: #121212;
   --text-color: #ffffff;
