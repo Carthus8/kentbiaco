@@ -3,31 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <title>E-Portfolio</title>
+  <link href="https://db.onlinewebfonts.com/c/5f21b8d13dad527377311ec2d5388bdf?family=Ndot+55" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
     <div class="topnav">
-      <a class="active" href="#index.html">Home</a>
-      <a href="#midterms.html">Midterms</a>
-      <a href="#finals.html">Finals</a>
-      <a href="#contact.html">Contact</a>
+      <div class="nav-left">
+        <a href="index.html">Home</a>
+        <a href="midterms.html">Midterms</a>
+        <a href="finals.html">Finals</a>
+        <a class="active" href="contact.html">Contact</a>
+      </div>
+
+      <h2>OOP E-Portfolio</h2>
+      
+      <div class="nav-right">
+        <label class="switch">
+          <input type="checkbox" id="dark-mode-toggle" onclick="toggleDarkMode()">
+          <span class="slider"></span>
+        </label>
+      </div>
     </div>
-
-    <label class="switch">
-      <input type="checkbox" id="dark-mode-toggle" onclick="toggleDarkMode()">
-      <span class="slider round"></span>
-    </label>
   </header>
+  
+  <h2 style="text-align: center; font-size: 24px; text-decoration: underline; margin-top: 3">//System.out.println("Hello World!");</h2>
+  
+  <section class ="about-section">
+      <div class ="about-container">
+        <h1 style="font-size: 60px; font-family: 'Ndot 55', sans-serif;">RIGIL KENT O. BIACO</h1>
+          <p style="font-family: 'Ndot 55', sans-serif; margin-top: 0;">BSIT 2-1</p>
+          <p>I am a 2nd year student from the Polytechnic University of the Philippines. Currently taking Bachelor of Science in Information Technology.
+          <p>This porfolio contains all the activites and seatworks compiled for Object-Oriented Programming, as well as my journey throughout the course.</p>
+      </div>
 
-  <section>
-    <h2>About Me</h2>
-    <p>I am a 2nd year BSIT student from The Polytechnic University of the Philippines.</p>
+      <button class="getstartedbutton" onclick="window.location.href='midterms.html'">
+          <span>GET STARTED. </span>
+      </button>
   </section>
-
-  <button onclick="sayHello()">Click Me</button>
 
   <script src="script.js"></script>
 </body>
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2026 Rigil Kent O. Biaco | OOP E-Portfolio</p>
+    <div class="author-links">
+      <a href="https://github.com/Carthus8">Github</a>
+      <a href="contact.html">Contact Me</a>
+    </div>
+  </div>
+</footer>
 </html>
