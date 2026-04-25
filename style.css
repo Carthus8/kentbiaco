@@ -213,7 +213,7 @@ input:checked + .slider:before {
   content: "🌙";
 }
 
-body.dark-theme .slider:before {
+html.dark-theme .slider:before {
   background-color: #222;
   border: 1px solid #444;
   transition: background-color 0.3s ease, transform 0.3s ease;
