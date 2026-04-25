@@ -116,12 +116,8 @@ input:checked + .slider:after {
 .topnav {
   background-color: #333;
   overflow: hidden;
-  justify-content: space-between;
   align-items: center;
   border-radius: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1;
   margin: 15px 0;
 }
 
@@ -129,7 +125,7 @@ input:checked + .slider:after {
 .topnav a {
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 12px;
   text-decoration: none;
   font-size: 17px;
   flex: 0 1 auto;
@@ -151,11 +147,9 @@ input:checked + .slider:after {
 
 .nav-left {
   display: flex;
+  gap: 15px;
 }
 
 .nav-right {
   margin-left: auto; /* pushes switch to the right */
-  display: flex;
-  align-items: center;
-  padding-right: 10px;
 }
