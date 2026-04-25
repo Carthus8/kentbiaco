@@ -117,14 +117,6 @@ input:checked + .slider:after {
   content: "";
 }
 
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
 /* Add a black background color to the top navigation */
 .topnav {
   display: flex;
