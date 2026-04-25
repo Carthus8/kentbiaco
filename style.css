@@ -110,9 +110,13 @@ input:checked + .slider:before {
   -webkit-transform: translateX(32px);
   -ms-transform: translateX(32px);
   transform: translateX(32px);
-  background-color: lightgrey;
-  transition: background-color 0.3s ease, transform 0.3s ease;
   content: "🌙";
+}
+
+body.dark-theme .slider:before {
+  background-color: #222;
+  border: 1px solid #444;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
   
 input:checked + .slider:after {
