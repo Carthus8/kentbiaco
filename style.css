@@ -267,6 +267,7 @@ input:checked + .slider:after {
   background-color: transparent;
   color: #04AA6D;
   border-bottom: 3px solid #04AA6D;
+  border-radius: 50px
   padding-bottom: 11px;
 }
 
