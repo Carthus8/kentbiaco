@@ -30,7 +30,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-family: "Courier Prime", sans serif;
+  font-family: "Courier Prime", sans-serif;
 }
 
 .getstartedbutton {
