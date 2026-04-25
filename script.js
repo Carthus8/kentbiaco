@@ -3,7 +3,6 @@ function sayHello() {
 }
 
 function toggleDarkMode() {
-  function toggleDarkMode() {
   const isChecked = document.getElementById('dark-mode-toggle').checked;
   
   if (isChecked) {
