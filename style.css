@@ -46,6 +46,7 @@ header {
   margin: 20px;
   display: block;
   font-family: 'Ndot 55', sans-serif;
+  border-radius: 50px;  
 }
 
 .getstartedbutton input {
