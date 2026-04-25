@@ -15,10 +15,6 @@ header {
   gap: 10px;
 }
 
-section {
-  margin: 50px;
-}
-
 .about-section {
   display: flex;
   justify-content: center; /* Centers the container horizontally */
