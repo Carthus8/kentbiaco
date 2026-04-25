@@ -45,6 +45,7 @@ header {
   cursor: pointer;
   margin: 20px;
   display: block;
+  font-family: 'Ndot 55', sans-serif;
 }
 
 .getstartedbutton input {
@@ -67,6 +68,7 @@ header {
   opacity: 0;
   top: 0;
   right: -20px;
+  bottom: 0;
   transition: 0.5s;
 }
 
