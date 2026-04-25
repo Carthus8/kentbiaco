@@ -30,7 +30,7 @@ header {
   font-size: 20px;
 }
 
-.button {
+.getstartedbutton {
   border-radius: 4px;
   background-color: #f4511e;
   border: none;
@@ -44,14 +44,14 @@ header {
   margin: 5px;
 }
 
-.button span {
+.getstartedbutton span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.button span:after {
+.getstartedbutton span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -60,11 +60,11 @@ header {
   transition: 0.5s;
 }
 
-.button:hover span {
+.getstartedbutton:hover span {
   padding-right: 25px;
 }
 
-.button:hover span:after {
+.getstartedbutton:hover span:after {
   opacity: 1;
   right: 0;
 }
