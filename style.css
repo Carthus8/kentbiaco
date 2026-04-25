@@ -1,5 +1,5 @@
 body {
-  font-family: 'Ndot 55', sans-serif;
+  font-family: 'Ndot 55', monospace;
   background-color: #f4f4f4;
   letter-spacing: 4px;
 }
@@ -30,6 +30,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-family: "Courier Prime", sans serif;
 }
 
 .getstartedbutton {
@@ -44,7 +45,7 @@ header {
   cursor: pointer;
   margin: 20px;
   display: block;
-  font-family: 'Ndot 55', sans-serif;
+  font-family: 'Ndot 55', monospace;
   border-radius: 50px;  
 }
 
