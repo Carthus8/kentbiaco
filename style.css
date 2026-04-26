@@ -344,9 +344,8 @@ file-link {
   color: #fff;
   padding: 15px;
   border-radius: 10px;
-  font-family: 'Courier Prime', sans serif;
+  font-family: 'Courier Prime', monospace;
   letter-spacing: -1px;
-  margin-top: 1;
 }
 
 .code-box::-webkit-scrollbar {
