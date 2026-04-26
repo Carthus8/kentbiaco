@@ -173,6 +173,84 @@ public class OOPAct2
         <div class="file-link">
           <a href="https://github.com/Carthus8/kentbiaco/blob/main/BSIT2-1_Biaco_Rigil%20Kent_SimpleWallet.pdf">View PDF -></a>
         </div>
+        <div class="code-box">
+          <pre>
+import java.util.Scanner;
+
+public class SimpleWalletLastName {
+    public static void main(String[] args) {
+        double balance = 3000; 
+        int transactionCount = 0; 
+        try (Scanner input = new Scanner(System.in)) {
+            boolean isRunning = true;
+            while (isRunning) {
+                
+                System.out.println("\n===== WALLET MENU =====");
+                System.out.println("1. View Balance");
+                System.out.println("2. Add Money");
+                System.out.println("3. Spend Money");
+                System.out.println("4. Exit");
+                System.out.print("Choice: ");
+                
+                if (!input.hasNextInt()) {
+                    System.out.println("Invalid input. Please enter a number.");
+                    input.next(); // consume invalid input
+                    continue;
+                }
+                int choice = input.nextInt();
+                
+                
+                switch (choice) {
+                    case 1 -> System.out.println("Balance = " + balance);
+                    
+                    case 2 -> {
+                        System.out.print("Add: ");
+                        if (!input.hasNextDouble()) {
+                            System.out.println("Invalid amount. Please enter a valid number.");
+                            input.next(); // consume invalid input
+                            continue;
+                        }
+                        double deposit = input.nextDouble();
+                        balance += deposit;
+                        transactionCount++;
+                        System.out.println("New Balance = " + balance);
+                    }
+                    
+                    case 3 -> {
+                        System.out.print("Spend: ");
+                        if (!input.hasNextDouble()) {
+                            System.out.println("Invalid amount. Please enter a valid number.");
+                            input.next(); // consume invalid input
+                            continue;
+                        }
+                        double expense = input.nextDouble();
+                        
+                        
+                        if (expense > 1000) {
+                            System.out.println("Exceeds maximum spend");
+                        } else if (expense > balance) {
+                            System.out.println("Insufficient balance");
+                        } else {
+                            balance -= expense;
+                            transactionCount++;
+                            System.out.println("New Balance = " + balance);
+                        }
+                    }
+                    
+                    case 4 -> {
+                        System.out.println("Transaction Count: " + transactionCount);
+                        System.out.println("Exiting program...");
+                        isRunning = false;
+                    }
+                    
+                    default -> System.out.println("Invalid choice. Please try again.");
+                }
+            }
+        }
+    }
+}
+          </pre>
+        </div>
       </div>
     </div>
   </section>
@@ -184,6 +262,37 @@ public class OOPAct2
         <p style="font-family: 'Courier Prime', sans-serif; letter-spacing: -1px;">Our fourth hands-on activity in OOP. Here we made a grade evaluation program that gives remarks based on the computed average running through if-loops.</p>
         <div class="file-link">
           <a href="https://github.com/Carthus8/kentbiaco/blob/main/BSIT2-1_Biaco_Rigil%20Kent_GradeEvaluation.pdf">View PDF -></a>
+        </div>
+        <div class="code-box">
+          <pre>
+Public class GradeEvaluationBiaco {
+    public static void main(String[] args) {
+        double prelim = 85; 
+        double midterm = 78;
+        double finals = 90;
+        
+        double average = (prelim + midterm + finals) / 3; 
+        
+        String remark = "";
+        
+        if (average >= 90 && average <= 100) {
+            remark = "Excellent"; 
+        } else if (average >= 80 && average < 90) {
+            remark = "Good"; 
+        } else if (average >= 75 && average < 80) {
+            remark = "Fair"; 
+        } else {
+            remark = "Failed";
+        }
+        
+        System.out.println("Prelim Grade: " + prelim); 
+        System.out.println("Midterm Grade: " + midterm); 
+        System.out.println("Final Grade: " + finals); 
+        System.out.printf("Average: %.2f\n", average); 
+        System.out.println("Remark: " + remark);
+    }
+}
+          </pre>
         </div>
       </div>
     </div>
