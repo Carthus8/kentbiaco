@@ -282,7 +282,7 @@ input:checked + .slider:after {
 }
 
 content-block {
-  padding: 80px 0; /* Vertical space between sections */
+  padding: 80px 20px; /* Vertical space between sections */
   width: 100%;
   display: flex;
   justify-content: center;
