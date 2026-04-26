@@ -280,3 +280,36 @@ input:checked + .slider:after {
   display: flex;
   align-items: center;
 }
+
+content-block {
+  padding: 80px 0; /* Vertical space between sections */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px; /* Keeps text readable */
+}
+
+/* Card style for assignments */
+.assignment-card {
+  background: rgba(255, 255, 255, 0.05); /* Slight box look */
+  border-left: 5px solid #04AA6D;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.section-divider {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #444, transparent);
+  margin: 50px 0;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
