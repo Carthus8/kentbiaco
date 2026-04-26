@@ -346,6 +346,7 @@ file-link {
   border-radius: 10px;
   font-family: 'Courier Prime', sans serif;
   letter-spacing: -1px;
+  margin-top: 1;
 }
 
 .code-box::-webkit-scrollbar {
