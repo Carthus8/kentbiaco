@@ -340,10 +340,10 @@ file-link {
   max-height: 300px;   
   overflow-y: auto;    
   overflow-x: auto;    
-  background: #1e1e1e; 
+  background: #333; 
   color: #fff;
   padding: 15px;
   border-radius: 10px;
-  font-family: monospace;
+  font-family: 'Courier Prime', sans serif;
   letter-spacing: -1px;
 }
