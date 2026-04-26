@@ -315,3 +315,21 @@ content-block {
 html {
   scroll-behavior: smooth;
 }
+
+file-link {
+  margin-top: 15px;
+  font-family: 'Ndot 55', monospace;
+  font-size: 14px;
+}
+
+.file-link a {
+  color: #04AA6D; /* Your signature green */
+  text-decoration: none; /* Removes the underline */
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.file-link a:hover {
+  color: #ffffff; /* Turns white when you hover */
+  text-decoration: underline;
+}
