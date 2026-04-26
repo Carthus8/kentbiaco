@@ -326,3 +326,11 @@ file-link {
   color: #ffffff; 
   text-decoration: underline;
 }
+
+divider {
+  border: 0;                   
+  height: 1px;                
+  background-color: #333;    
+  margin: 40px 0;             
+  width: 100%;   
+  background: linear-gradient(to right, transparent, #04AA6D, transparent);
