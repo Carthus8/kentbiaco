@@ -347,3 +347,17 @@ file-link {
   font-family: 'Courier Prime', sans serif;
   letter-spacing: -1px;
 }
+
+.code-box::-webkit-scrollbar {
+  width: 10px;
+}
+
+.code-box::-webkit-scrollbar-track {
+  background: #333;
+  border-radius: 6px;
+}
+
+.code-box::-webkit-scrollbar-thumb {
+  background: #04AA6;
+  border-radius: 6px;
+}
