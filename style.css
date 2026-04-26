@@ -3,7 +3,7 @@ body {
   letter-spacing: 4px;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Takes up full screen height */
+  min-height: 100vh;
   margin: 0;
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -23,9 +23,9 @@ header {
 footer {
   width: 100%;
   padding: 20px 0;
-  background-color: transparent; /* Keeps your theme background visible */
-  border-top: 1px solid #444;    /* Subtle line to separate from content */
-  margin-top: 50px;              /* Space above the footer */
+  background-color: transparent; 
+  border-top: 1px solid #444; 
+  margin-top: 50px;           
 }
 
 .footer-content {
@@ -36,7 +36,7 @@ footer {
   font-family: 'Ndot 55', sans-serif;
   font-size: 14px;
   color: var(--text-color);
-  opacity: 0.7; /* Makes it look secondary to the main content */
+  opacity: 0.7;
 }
 
 .author-links a {
@@ -51,17 +51,17 @@ footer {
 }
 .about-section {
   display: flex;
-  justify-content: center; /* Centers the container horizontally */
-  align-items: center;     /* Centers the container vertically (if needed) */
-  min-height: 50vh;        /* Adjust based on your layout */
+  justify-content: center; 
+  align-items: center;    
+  min-height: 50vh;      
   width: 100%;
   flex: 1;
 }
 
 .about-container {
-  width: 90%;              /* Responsive width for mobile */
-  max-width: 75ch;        /* Limits how wide the text spreads on desktop */
-  text-align: left;        /* This aligns the text to the left within the center */
+  width: 90%;              
+  max-width: 75ch;        
+  text-align: left;        
   font-size: 20px;
   display: flex;
   flex-direction: column;
@@ -155,7 +155,6 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  /* width: 60px;  <-- REMOVED THIS */
   background-color: #444;
   transition: .4s;
   border-radius: 34px;
@@ -170,22 +169,22 @@ html {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white; /* Added white background for the knob */
+  background-color: white; 
   border-radius: 50%;
-  display: flex;           /* Centers the emoji perfectly */
+  display: flex;           
   align-items: center;
   justify-content: center;
-  font-size: 14px;         /* Prevents the emoji from overflowing */
+  font-size: 14px;        
   -webkit-transition: .4s;
   transition: .4s;
   z-index: 2;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Makes the knob pop out */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3); 
 }
 
 .slider:after {
   position: absolute;
   content: "🌙";
-  right: 10px;    /* <-- FIXED TYPO (Removed space) */
+  right: 10px;    
   top: 50%;
   transform: translateY(-50%);
   font-size: 12px;
@@ -202,7 +201,7 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.3); /* Keeps depth, removes blue glow */
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.3); 
   outline: none;
 }
 
@@ -223,19 +222,18 @@ input:checked + .slider:after {
   content: "";
 }
 
-/* Add a black background color to the top navigation */
 .topnav {
   display: flex;
   align-items: center;
   height: 50px;
   justify-content: space-between;
 
-  width: 90%;              /* controls pill width */
-  max-width: 1000px;      /* prevents it from getting too wide */
-  margin: 20px auto;      /* centers it horizontally */
+  width: 90%;              
+  max-width: 1000px;      
+  margin: 20px auto;      
 
   padding: 10px 20px;
-  border-radius: 50px;    /* makes pill shape */
+  border-radius: 50px;    
   background-color: #333;
   
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
@@ -243,7 +241,6 @@ input:checked + .slider:after {
   backdrop-filter: blur(10px);
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   color:  var(--text-color);
   text-align: center;
@@ -255,14 +252,12 @@ input:checked + .slider:after {
   flex: 0 1 auto;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
   border-radius: 50px;
   color: black;
 }
 
-/* Add a color to the active/current link */
 .topnav a.active {
   background-color: transparent;
   color: #04AA6D;
@@ -282,7 +277,7 @@ input:checked + .slider:after {
 }
 
 content-block {
-  padding: 80px 20px; /* Vertical space between sections */
+  padding: 80px 20px; 
   width: 100%;
   display: flex;
   justify-content: center;
@@ -291,13 +286,12 @@ content-block {
 
 .container {
   width: 90%;
-  max-width: 800px; /* Keeps text readable */
+  max-width: 800px; 
   margin: auto;
 }
 
-/* Card style for assignments */
 .assignment-card {
-  background: rgba(255, 255, 255, 0.05); /* Slight box look */
+  background: rgba(255, 255, 255, 0.05); 
   border-left: 5px solid #04AA6D;
   padding: 20px;
   margin-top: 20px;
@@ -311,7 +305,6 @@ content-block {
   margin: 50px 0;
 }
 
-/* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
 }
@@ -323,13 +316,13 @@ file-link {
 }
 
 .file-link a {
-  color: #04AA6D; /* Your signature green */
-  text-decoration: none; /* Removes the underline */
+  color: #04AA6D;
+  text-decoration: none; 
   font-weight: bold;
   transition: 0.3s;
 }
 
 .file-link a:hover {
-  color: #ffffff; /* Turns white when you hover */
+  color: #ffffff; 
   text-decoration: underline;
 }
