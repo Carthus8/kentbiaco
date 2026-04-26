@@ -335,3 +335,14 @@ file-link {
   width: 100%;   
   background: linear-gradient(to right, transparent, #04AA6D, transparent);
 }
+
+.code-box {
+  max-height: 300px;   
+  overflow-y: auto;    
+  overflow-x: auto;    
+  background: #1e1e1e; 
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  font-family: monospace;
+}
