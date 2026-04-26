@@ -286,10 +286,11 @@ content-block {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .container {
-  width: 60%;
+  width: 90%;
   max-width: 800px; /* Keeps text readable */
   margin: auto;
 }
