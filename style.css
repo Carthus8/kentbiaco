@@ -353,7 +353,7 @@ file-link {
 }
 
 .code-box::-webkit-scrollbar-track {
-  background: #333;
+  background: #222;
   border-radius: 6px;
 }
 
