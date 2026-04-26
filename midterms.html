@@ -77,6 +77,90 @@
         <div class="file-link">
           <a href="https://github.com/Carthus8/kentbiaco/blob/main/BSIT2-1_Biaco_RigilKent_OperatorsActivity%232.pdf" target="_blank">View PDF -></a>
         </div>
+        <div class="code-box">
+          <pre>
+/*public class OOPAct2
+{
+    public static void main(String[] args) 
+    {
+        //Part 1
+        int a = 10;  
+        int b = 5;
+
+        System.out.println(a == 10);
+        System.out.println(a | 0);
+        System.out.println(b > 10);
+        System.out.println(a | b);
+
+        //Part 2
+        int c = 25;
+        int d = 30;
+
+        String result = (c < 30)? "true": "false";
+        String result2 = (d != 30)? "true": "false";
+        String result3 = (c > 20 && c < 30)?"25":"30";
+        String result4 = (d > 20 && d < 30)?"25":"30";
+        System.out.println(result);
+        System.out.println(result2);
+        System.out.println(result3);
+        System.out.println(result4);
+
+        //Part 3
+        int num;
+
+        num = 100;
+        num += 20;
+        System.out.println("Addition: " + num);
+     
+        num = 100;
+        num -= 30;
+        System.out.println("Subtraction: " + num);
+
+        num = 100;
+        num *= 1.44;
+        System.out.println("Multiplication: " + num);
+
+        num = 128;
+        num /= 8;
+        System.out.println("Division: " + num);
+    }
+}*/
+
+public class OOPAct2
+{
+    public static void main(String[] args)
+    {
+        //numeric result 1
+        int trick = 33;
+        int trickresult = ++trick + --trick;
+        System.out.println("Numeric Output 1: "+ trickresult);
+
+        //numeric result 2
+        int e = 25;
+        int modulus = 146 % e;
+        System.out.println("Numeric Output 2: "+ modulus);
+        
+        //numeric result 3
+        int f = 5;
+        int bit = f << 2;
+        System.out.println("Numeric Output 3: "+ bit);
+
+        //numeric result 4
+        int g = 100;
+        int assignment = g += 44;
+        System.out.println("Numeric Output 4: "+ assignment);
+
+        //boolean output 1
+        boolean reverse = !((30 / 3 < 3 || 1 > 0) && (100 % 33 == 1 && 25 - 50 == 25));
+        System.out.println("Boolean Output 1: "+ reverse);
+
+        //boolean output 2
+        boolean or = ((75 / 25 == 4 || 6 + 7 == 67) || (4 == 2 * 2 && 20 % 3 == 3) );
+        System.out.println("Boolean Output 2: "+ or); 
+    }
+}
+          </pre>
+        </div>
       </div>
     </div>
   </section>
