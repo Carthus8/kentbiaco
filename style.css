@@ -349,7 +349,8 @@ file-link {
 }
 
 .code-box::-webkit-scrollbar {
-  width: 10px;
+  width: 6px;
+  height: 6px;
 }
 
 .code-box::-webkit-scrollbar-track {
