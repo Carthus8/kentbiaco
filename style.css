@@ -289,8 +289,9 @@ content-block {
 }
 
 .container {
-  width: 90%;
+  width: 60%;
   max-width: 800px; /* Keeps text readable */
+  margin: auto;
 }
 
 /* Card style for assignments */
