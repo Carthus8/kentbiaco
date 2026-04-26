@@ -60,7 +60,7 @@
    <section id="midterms" class="content-block">
     <div class="container">
       <div class="assignment-card">
-        <h3>Activity #1</h3>
+        <h3>Activity #1 - Variable and Memory Identification</h3>
         <p style="font-family: 'Courier Prime', sans-serif; letter-spacing: -1px;">Our first hands-on activity in OOP. Here I learned about Variable Identification as well as proper understanding of syntax and memory impact during execution.</p>
         <div class="file-link">
           <a href="https://github.com/Carthus8/kentbiaco/blob/main/BSIT2-1_Biaco_RigilKent_CodeAnalysis%231.pdf" target="_blank">View PDF -></a>
@@ -72,7 +72,7 @@
   <section id="midterms" class="content-block">
     <div class="container">
       <div class="assignment-card">
-        <h3>Activity #2</h3>
+        <h3>Activity #2 - Data Types & Boolean Expressions</h3>
         <p style="font-family: 'Courier Prime', sans-serif; letter-spacing: -1px;">Our second hands-on activity in OOP. Here we tackled about the multiple types of operators, as well as demonstrating the use of different data types and boolean logic.</p>
         <div class="file-link">
           <a href="https://github.com/Carthus8/kentbiaco/blob/main/BSIT2-1_Biaco_RigilKent_OperatorsActivity%232.pdf" target="_blank">View PDF -></a>
@@ -168,7 +168,7 @@ public class OOPAct2
   <section id="midterms" class="content-block">
     <div class="container">
       <div class="assignment-card">
-        <h3>Activity #3</h3>
+        <h3>Activity #3 - Simple Wallet System</h3>
         <p style="font-family: 'Courier Prime', sans-serif; letter-spacing: -1px;">Our third hands-on activity in OOP. We made a simple wallet system with a predetermined budget, allowing dynamic inputs through a menu like add, spend, view. This is also the first activity where we used the Scanner() function.</p>
         <div class="file-link">
           <a href="https://github.com/Carthus8/kentbiaco/blob/main/BSIT2-1_Biaco_Rigil%20Kent_SimpleWallet.pdf">View PDF -></a>
@@ -258,7 +258,7 @@ public class SimpleWalletLastName {
   <section id="midterms" class="content-block">
     <div class="container">
       <div class="assignment-card">
-        <h3>Activity #4</h3>
+        <h3>Activity #4 - Grade Evaluation Program</h3>
         <p style="font-family: 'Courier Prime', sans-serif; letter-spacing: -1px;">Our fourth hands-on activity in OOP. Here we made a grade evaluation program that gives remarks based on the computed average running through if-loops.</p>
         <div class="file-link">
           <a href="https://github.com/Carthus8/kentbiaco/blob/main/BSIT2-1_Biaco_Rigil%20Kent_GradeEvaluation.pdf">View PDF -></a>
@@ -301,7 +301,7 @@ Public class GradeEvaluationBiaco {
   <section id="midterms" class="content-block">
     <div class="container">
       <div class="assignment-card">
-        <h3>Activity #5</h3>
+        <h3>Activity #5 - Personal Expense Tracker</h3>
         <p style="font-family: 'Courier Prime', sans-serif; letter-spacing: -1px;">Our fifth hands-on activity in OOP. This is essentialy a more fleshed-out version of the simple wallet program, with a few optional requirements. We used multiple functions to easily declare the blocks of code directly in a singular call, and function return calls were also implemented.</p>
         <div class="file-link">
           <a href="https://github.com/Carthus8/kentbiaco/blob/main/ExpenseTrackerBiaco.pdf">View PDF -></a>
@@ -371,7 +371,7 @@ public class ExpenseTrackerBiaco
   <section id="midterms" class="content-block">
     <div class="container">
       <div class="assignment-card">
-        <h3>Seatwork #1</h3>
+        <h3>Seatwork #1 - Bitwise Operators & Value Tracking</h3>
         <p style="font-family: 'Courier Prime', sans-serif; letter-spacing: -1px;">This is our face-to-face seatwork in OOP. We had to accurately track different variables throughout different lines of incrementing logics. At first it was confusing, but as I got through the program I understood the logic better.</p>
       </div>
     </div>
@@ -380,10 +380,73 @@ public class ExpenseTrackerBiaco
   <section id="midterms" class="content-block">
     <div class="container">
       <div class="assignment-card">
-        <h3>Seatwork #2</h3>
+        <h3>Seatwork #2 - Basic ATM System</h3>
         <p style="font-family: 'Courier Prime', sans-serif; letter-spacing: -1px;">Our second seatwork in OOP. Here we made an ATM system that loops indefinitely until the user implicitly asks to exit, all-while the switch-case determines what number is inputted corresponding to the Menu choices.</p>
         <div class="file-link">
           <a href="https://github.com/Carthus8/kentbiaco/blob/main/BSIT2-1_Biaco_RigilKent_MidtermActivity%233.pdf">View PDF -></a>
+        </div>
+        <div class="code-box">
+          <pre>
+import java.util.Scanner;
+
+public class ATM_Biaco {
+    public static void main(String[] args) {
+        double balance = 3000; 
+        int transactionCount = 0; 
+        Scanner input = new Scanner(System.in); 
+        
+        while (true) { 
+            System.out.println("\nATM Menu"); 
+            System.out.println("1. Check Balance"); 
+            System.out.println("2. Deposit"); 
+            System.out.println("3. Withdraw");
+            System.out.println("4. Exit");
+            System.out.print("Choice: ");
+            int choice = input.nextInt();
+            
+           
+            switch (choice) { 
+                case 1:
+                    System.out.println("Current Balance: " + balance); 
+                    break;
+                    
+                case 2:
+                    System.out.print("Enter Deposit Amount: ");
+                    double deposit = input.nextDouble();
+                    balance += deposit;
+                    transactionCount++; 
+                    System.out.println("New Balance: " + balance);
+                    break;
+                    
+                case 3:
+                    System.out.print("Enter withdraw amount: ");
+                    double withdraw = input.nextDouble();
+                    
+                    
+                    if (withdraw > 3000) { 
+                        System.out.println("Exceeds maximum spend"); 
+                    } else if (withdraw > balance) { 
+                        System.out.println("Insufficient balance");
+                    } else {
+                        balance -= withdraw;
+                        transactionCount++; 
+                        System.out.println("New Balance = " + balance);
+                    }
+                    break;
+                    
+                case 4:
+                    System.out.println("Transaction Count: " + transactionCount); 
+                    System.out.println("Exiting program...");
+                    break;
+                    
+                default:
+                    System.out.println("Invalid input, try again.");
+            }
+        }
+        input.close();
+    }
+}
+          </pre>
         </div>
       </div>
     </div>
@@ -392,10 +455,45 @@ public class ExpenseTrackerBiaco
   <section id="midterms" class="content-block">
     <div class="container">
       <div class="assignment-card">
-        <h3>Seatwork #3</h3>
+        <h3>Seatwork #3 - Student Age Analyzer</h3>
         <p style="font-family: 'Courier Prime', sans-serif; letter-spacing: -1px;">Our third seatwork in OOP. We made a student age analyzer that asks for the user's name and age, and then runs it through a if-else loop to show remarks based on age.</p>
         <div class="file-link">
           <a href="https://github.com/Carthus8/kentbiaco/blob/main/BSIT2-1_Biaco_RigilKent_StudentAgeAnalyzer%20(1).pdf">View PDF -></a>
+        </div>
+        <div class="code-box">
+          <pre>
+import java.util.Scanner;
+
+public class StudentAgeAnalyzerBiaco
+{
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the name of the student: ");
+        String name = input.nextLine();
+        System.out.print("Enter the age of the student: ");
+        int age = input.nextInt();
+
+        System.out.println("The name of the student is " + name);
+        if (age <= 12)
+        {
+            System.out.println("The student is a CHILD.");
+
+        }else if (age <= 19)
+        {
+            System.out.println("The student is a TEENAGER.");
+        }
+        else if (age <= 59)
+        {
+            System.out.println("The student is an ADULT.");
+        }
+        else
+        {
+            System.out.println("The student is a SENIOR CITIZEN.");
+        }
+    }
+}
+          </pre>
         </div>
       </div>
     </div>
